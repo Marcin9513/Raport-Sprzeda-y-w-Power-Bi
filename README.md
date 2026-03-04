@@ -312,9 +312,8 @@ VAR kolor =
 
 RETURN
     kolor
-
-<img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/86479a85-b38d-4aea-b099-3e532bd39e2b" />
-
+```
+<img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/b5fe9034-d6dc-4016-aa02-4723c12799d2" />
 
 
 
