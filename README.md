@@ -148,3 +148,6 @@ Miara:
 - dynamicznie przypisuje kolor w zależności od wyniku.
 
 ---
+
+<img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/61c8a56f-c824-4606-a1ca-d292c21f51d5" />
+
