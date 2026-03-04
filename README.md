@@ -273,4 +273,48 @@ Wizualizacja pozwala:
 ---
 <img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/b033c1da-20e5-4531-b4f7-500d267befcc" />
 
+## Strona 5 – Analiza trendów sprzedaży w ujęciu miesięcznym
+
+Piąta strona raportu skupia się na wizualizacji trendów sprzedaży w rozbiciu miesięcznym, umożliwiając szybkie wychwycenie odchyleń od średniej i identyfikację wartości ekstremalnych.
+
+---
+
+## 1. Trend sprzedaży – wykres liniowy z kolorem etykiet względem średniej
+
+Na pierwszym wykresie liniowym przedstawiono sprzedaż w kolejnych miesiącach i latach.  
+
+**Konfiguracja:**
+- Oś X: Rok i miesiąc (hierarchia)  
+- Oś Y: Sprzedaż  
+
+**Dodatkowo zastosowano:**
+- zaznaczenie dwóch wybranych miesięcy,
+- linię średniej sprzedaży w wybranym okresie,
+- etykiety danych dla obu serii (sprzedaż i średnia),
+- cieniowanie obszaru pod linią w celu uwidocznienia trendu.
+
+**Miara koloru etykiet względem średniej:**
+
+```DAX
+Liniowy kolor etykiet = 
+VAR srednia_sprzedaz = 
+    AVERAGEX(
+        ALLSELECTED(Kalendarz[Rok], Kalendarz[Miesiąc]),
+        [Sprzedaż]
+    )
+
+VAR kolor =
+    SWITCH(
+        TRUE(),
+        [Sprzedaż] < srednia_sprzedaz, "teal",
+        [Sprzedaż] > srednia_sprzedaz, "olive"
+    )
+
+RETURN
+    kolor
+
+<img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/86479a85-b38d-4aea-b099-3e532bd39e2b" />
+
+
+
 
