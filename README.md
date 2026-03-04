@@ -185,4 +185,92 @@ Wszystkie wizualizacje reagują dynamicznie na wybrane filtry.
 ---
 <img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/517dfc36-8e0d-4e7b-b85a-a02ae3f75638" />
 
+## Strona 4 – Analiza sprzedaży i realizacja celu (2023)
+
+Czwarta strona raportu koncentruje się na szczegółowej analizie sprzedaży w wybranym roku oraz ocenie realizacji założonych celów sprzedażowych.
+
+---
+
+## 1. Sprzedaż w roku 2023 – analiza branż
+
+Na pierwszym wykresie słupkowym przedstawiono sprzedaż według branż.
+
+Konfiguracja:
+- Oś Y: Branża  
+- Oś X: Sprzedaż  
+
+Wizualizacja została sformatowana w celu poprawy czytelności osi i etykiet.  
+Dodatkowo zastosowano:
+
+- etykiety pokazujące procentową zmianę względem poprzedniego roku,
+- formatowanie warunkowe (reguły kolorów),
+- słupki błędów oparte na miarze „Sprzedaż PY”.
+
+Miara etykiety zmiany sprzedaży:
+
+```
+Etykieta zmiany sprzedaży vs PR = 
+SWITCH(
+    TRUE(),
+    [Zmiana sprzedaży vs PR] > 0, 
+        "▲ " & FORMAT([Zmiana sprzedaży vs PR], "#.0%") & " vs PY",
+    [Zmiana sprzedaży vs PR] < 0, 
+        "▼ " & FORMAT([Zmiana sprzedaży vs PR], "#.0%") & " vs PY",
+    [Zmiana sprzedaży vs PR]
+)
+```
+
+Rozwiązanie to umożliwia szybkie określenie:
+- które branże rosną,
+- które notują spadek,
+- jaka jest skala zmiany rok do roku.
+
+---
+
+## 2. Porównanie sprzedaży 2022 vs 2023
+
+Drugi wykres słupkowy (dolna lewa część strony) przedstawia bezpośrednie porównanie sprzedaży w latach 2022 i 2023.
+
+Wizualizacja:
+- prezentuje dwie wartości dla każdej branży,
+- umożliwia bezpośrednie zestawienie wyników rok do roku,
+- pozwala ocenić skalę wzrostu lub spadku w ujęciu nominalnym.
+
+Dzięki takiej konstrukcji użytkownik może szybko porównać wyniki bez konieczności analizowania osobnych wykresów.
+
+---
+
+## 3. Wykonanie celu sprzedażowego – 2023
+
+Trzeci wykres słupkowy przedstawia poziom realizacji celu sprzedażowego w podziale na kategorie.
+
+Konfiguracja:
+- Oś Y: Kategorie  
+- Oś X: Wykonanie celu (%) oraz Cel 100%
+
+Zastosowane miary:
+
+**Wykonanie celu 2023**
+
+```
+Wykonanie celu 2023 = 
+DIVIDE(
+    [Sprzedaż],
+    SUM('cel 2023'[Cel])
+)
+```
+
+Dodatkowo:
+- utworzono miarę reprezentującą poziom 100% celu,
+- dodano linie referencyjne,
+- zastosowano czytelne skalowanie procentowe.
+
+Wizualizacja pozwala:
+- ocenić, które kategorie zrealizowały plan,
+- wskazać segmenty poniżej oczekiwań,
+- szybko określić stopień realizacji celu względem wartości docelowej.
+
+---
+<img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/b033c1da-20e5-4531-b4f7-500d267befcc" />
+
 
