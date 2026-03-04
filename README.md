@@ -151,3 +151,38 @@ Miara:
 
 <img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/61c8a56f-c824-4606-a1ca-d292c21f51d5" />
 
+## Strona 3 – Sprzedaż w latach 2020–2024 (widok struktury)
+
+Trzecia strona raportu przedstawia sprzedaż w ujęciu wieloletnim z podziałem na branże. Celem było zaprezentowanie zmiany struktury sprzedaży w czasie oraz pokazanie, które segmenty rozwijają się najszybciej.
+
+---
+
+## Zakres wizualizacji
+
+Na stronie wykorzystano wykres kolumnowy skumulowany, który prezentuje:
+
+- sprzedaż w latach 2020–2024  
+- podział wartości na poszczególne branże  
+- zmianę udziału branż w całkowitej sprzedaży  
+
+Dzięki takiej formie wizualizacji możliwe jest jednoczesne przeanalizowanie:
+- łącznego wzrostu sprzedaży rok do roku,
+- struktury sprzedaży w danym roku,
+- dynamiki rozwoju poszczególnych segmentów.
+
+---
+
+## Interaktywność raportu
+
+Strona została wyposażona w fragmentatory:
+
+- Rok  
+- Województwo  
+
+Pozwalają one filtrować dane i analizować wyniki w wybranym kontekście.  
+Wszystkie wizualizacje reagują dynamicznie na wybrane filtry.
+
+---
+<img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/517dfc36-8e0d-4e7b-b85a-a02ae3f75638" />
+
+
