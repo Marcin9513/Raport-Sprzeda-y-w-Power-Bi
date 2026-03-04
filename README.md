@@ -58,3 +58,6 @@ IF(
 ```
 
 ---
+
+<img width="2062" height="1162" alt="image" src="https://github.com/user-attachments/assets/b8458eb4-d030-46f0-800f-290c766f3e19" />
+
